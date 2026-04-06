@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bases-charp", "bases-charp.csproj", "{2E396844-ECC4-C6C6-150E-DA9FB355AE18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E396844-ECC4-C6C6-150E-DA9FB355AE18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E396844-ECC4-C6C6-150E-DA9FB355AE18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E396844-ECC4-C6C6-150E-DA9FB355AE18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E396844-ECC4-C6C6-150E-DA9FB355AE18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EBD8E0CE-CF7D-4648-ACB2-1740A1A76E24}
+	EndGlobalSection
+EndGlobal
