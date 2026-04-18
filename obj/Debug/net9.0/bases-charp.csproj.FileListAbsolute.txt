@@ -1,0 +1,15 @@
+C:\Users\PERSONAL\Desktop\repos\bases-charp\bin\Debug\net9.0\bases-charp.exe
+C:\Users\PERSONAL\Desktop\repos\bases-charp\bin\Debug\net9.0\bases-charp.deps.json
+C:\Users\PERSONAL\Desktop\repos\bases-charp\bin\Debug\net9.0\bases-charp.runtimeconfig.json
+C:\Users\PERSONAL\Desktop\repos\bases-charp\bin\Debug\net9.0\bases-charp.dll
+C:\Users\PERSONAL\Desktop\repos\bases-charp\bin\Debug\net9.0\bases-charp.pdb
+C:\Users\PERSONAL\Desktop\repos\bases-charp\obj\Debug\net9.0\bases-charp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PERSONAL\Desktop\repos\bases-charp\obj\Debug\net9.0\bases-charp.AssemblyInfoInputs.cache
+C:\Users\PERSONAL\Desktop\repos\bases-charp\obj\Debug\net9.0\bases-charp.AssemblyInfo.cs
+C:\Users\PERSONAL\Desktop\repos\bases-charp\obj\Debug\net9.0\bases-charp.csproj.CoreCompileInputs.cache
+C:\Users\PERSONAL\Desktop\repos\bases-charp\obj\Debug\net9.0\bases-charp.sourcelink.json
+C:\Users\PERSONAL\Desktop\repos\bases-charp\obj\Debug\net9.0\bases-charp.dll
+C:\Users\PERSONAL\Desktop\repos\bases-charp\obj\Debug\net9.0\refint\bases-charp.dll
+C:\Users\PERSONAL\Desktop\repos\bases-charp\obj\Debug\net9.0\bases-charp.pdb
+C:\Users\PERSONAL\Desktop\repos\bases-charp\obj\Debug\net9.0\bases-charp.genruntimeconfig.cache
+C:\Users\PERSONAL\Desktop\repos\bases-charp\obj\Debug\net9.0\ref\bases-charp.dll
