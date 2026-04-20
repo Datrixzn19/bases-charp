@@ -1,5 +1,5 @@
 //pedir el monto que va a pagar y el porcentaje de propina que va a dejar, luego le damos el total
-namespace Restaurante.Calculos;
+namespace Restaurante.Logica;
 
 
 public class CalcularPropina
@@ -25,7 +25,7 @@ Pedir el porcentaje (usa int o double).
 Mostrar el resultado final.
 
 
-using Restaurante.Calculos;
+using Restaurante.Logica;
 
 //Pedir el monto
 Console.WriteLine("Por favor, cual es el monto: ");

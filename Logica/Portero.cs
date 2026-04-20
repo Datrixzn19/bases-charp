@@ -1,4 +1,4 @@
-namespace GestionEvento.Seguridad;
+namespace GestionEvento.Logica;
 
 public class Portero
 {
@@ -30,7 +30,7 @@ public class Portero
 
         //program cs
 /*
-using GestionEvento.Seguridad;
+using GestionEvento.Logica;
 
 // Captura de datos
 Console.Write("Nombre del invitado: ");
