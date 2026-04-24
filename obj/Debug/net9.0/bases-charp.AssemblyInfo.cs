@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("bases-charp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9343b96e48b5c1b823d3e7f044cf7ad556798869")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b12372a127a17dbfebf9282ba2c9d5a446c7e6ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("bases-charp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("bases-charp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
