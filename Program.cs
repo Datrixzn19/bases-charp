@@ -76,9 +76,23 @@ do
 
 
 
-    //RESULTADOS 
-    Console.WriteLine("\n RESUMEN");
-    foreach (var lv in listaVideojuego)
-    {
-        Console.WriteLine($"nombre: {lv.Titulo}, lanzado el: {lv.AnioLanzamiento}, categoria: {lv.Categoria}");
-    }
+//RESULTADOS 
+Console.WriteLine("\n RESUMEN");
+foreach (var lv in listaVideojuego)
+{
+    Console.WriteLine($"nombre: {lv.Titulo}, lanzado el: {lv.AnioLanzamiento}, categoria: {lv.Categoria}");
+}
+
+
+//USO DE LINQ
+var catAccion = listaVideojuego.
+    Where(j => j.Categoria == Categorias.Accion
+    ).ToList();
+foreach (var p in catAccion)
+{
+    Console.WriteLine($"Juego de accion: {p.Titulo}");
+}
+
+var contar = listaVideojuego.Count(j => j.Categoria == Categorias.Deportes);
+Console.WriteLine($"Hubo {contar} juegos de deportes");
+
