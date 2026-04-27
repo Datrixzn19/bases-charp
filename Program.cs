@@ -1,45 +1,84 @@
-﻿using PedidosDeRestaurante.Logica;
+﻿
+using ColeccionJuegos.Logica;
 
-List<Pedido> pedidos = new List<Pedido>();
+List<Videojuego> listaVideojuego = new List<Videojuego>();
 
-Console.WriteLine("Introduzca el número de pedidos que desea realizar: ");
-int.TryParse(Console.ReadLine(), out int n_pedidos);
-
-int n_vueltas = 0;
-while(n_vueltas < n_pedidos)
-{ 
-    // Crear el obj dentro del bucle 
-    Pedido pedido = new Pedido();
-
-    Console.WriteLine($"\nPedido #{n_vueltas + 1}");
-
-        //NOMBRE
-    Console.WriteLine("Nombre del plato: ");
-    pedido.NombrePlato = Console.ReadLine();
-
-        //PRECIO
-    Console.WriteLine("Precio del plato: ");
-    if (!decimal.TryParse(Console.ReadLine(), out decimal precio))
-    {
-        Console.WriteLine("Formato no válido, se asigna 10.00");
-        precio = 10.0m;
-    }
-    pedido.Precio = precio;
-
-        //CATEGORIA
-    Console.WriteLine("Categoría (0-Entrada, 1-Principal, 2-Postre): ");
-    int.TryParse(Console.ReadLine(), out int cat);
-    
-
-    pedido.Categoria = (TipoPlato)cat;
-    pedidos.Add(pedido);
-
-    n_vueltas++; 
-}
-
-// RECORRER LA LISTA
-Console.WriteLine("\nLISTA FINALIZADA:");
-foreach (var p in pedidos)
+int vueltas = 1;
+int juegosAgregar = 1;//por defecto dejara ingresar un juego 
+try
 {
-    Console.WriteLine($"- {p.NombrePlato} ({p.Categoria}): ${p.Precio}");
+    Console.WriteLine("Escribe cuantos juegos quieres agregar: ");
+    juegosAgregar = int.Parse(Console.ReadLine());//intentamos asignar el numero de juegos
 }
+catch (FormatException)
+{
+    Console.WriteLine("No has introducido un numero, solo podras ingresar un solo juego");
+}
+
+
+
+do
+{
+    Console.WriteLine("\n INTRODUCE TU VIDEOJUEGO");
+
+    var videojuego = new Videojuego();//instaciamos la clase 
+    Console.WriteLine($"\n Vuelta N{vueltas}");
+
+            //NOMBRE
+    Console.WriteLine("Nombre: ");
+    videojuego.Titulo = Console.ReadLine();
+
+
+            //ANIO
+    int aniolanVideojuego = 0;
+
+    Console.WriteLine("Introduce el anio de lanzamiento: ");
+    if (int.TryParse(Console.ReadLine(), out aniolanVideojuego) && aniolanVideojuego>0)
+    {
+        Console.WriteLine(aniolanVideojuego);
+    }
+    else
+    {
+        Console.WriteLine("Anio no valido, se asinara el anio 2026");
+        aniolanVideojuego = 2026;
+    }
+    videojuego.AnioLanzamiento = aniolanVideojuego;
+
+
+
+
+            ///CATEGORIA 
+        int categoriaVideojuego = 100;
+        Console.WriteLine("Elije la categorira: 0-Accion, 1-RPG, 2-Deportes");
+        if (int.TryParse(Console.ReadLine(), out categoriaVideojuego) && categoriaVideojuego > 0 && categoriaVideojuego <= 2)
+        {
+            videojuego.Categoria = (Categorias)categoriaVideojuego;
+        }
+        else
+        {
+            Console.WriteLine("Opcion no valida, se asignara la opcion 0-Accion");
+            videojuego.Categoria = Categorias.Accion;
+        }
+        
+
+
+
+
+        //ASIGNACION 
+    listaVideojuego.Add(videojuego);
+    vueltas++;
+} while (vueltas <= juegosAgregar);
+
+
+
+
+
+
+
+
+    //RESULTADOS 
+    Console.WriteLine("\n RESUMEN");
+    foreach (var lv in listaVideojuego)
+    {
+        Console.WriteLine($"nombre: {lv.Titulo}, lanzado el: {lv.AnioLanzamiento}, categoria: {lv.Categoria}");
+    }
